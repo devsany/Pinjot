@@ -1,5 +1,6 @@
 import { useState } from "react";
 import MultipleImageUpload from "../utils/MultipleImageUpload";
+import { Link } from "react-router-dom";
 
 // ─── Icons (inline SVG, no external dependency) ──────────────────────────────
 
@@ -341,9 +342,9 @@ export default function SignUpForm() {
 
         <p className="footer-text">
           Already have an account?{" "}
-          <a href="#" className="footer-link">
+          <Link to="/login" className="footer-link">
             Sign in
-          </a>
+          </Link>
         </p>
       </div>
     </>
