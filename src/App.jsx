@@ -5,7 +5,7 @@ import Navbar from "./component/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginPage from "./component/LoginPage";
 import ProfilePage from "./component/ProfilePage";
-import ProtectedRoute from "./utlis/ProtectedRoute";
+import ProtectedRoute from "./utils/ProtectedRoute";
 import HeroPage from "./component/HeroPage";
 import DocumentationPage from "./template/DocumentationPage";
 import HelpCenter from "./template/HelpCenter";
@@ -48,7 +48,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path='/features' element={<Features />} />
             <Route
-            path="/profile"
+            path="/profile/:userId"
             element={
               <ProtectedRoute>
                 <ProfilePage />

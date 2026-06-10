@@ -32,7 +32,7 @@ const LoginPage = () => {
     if (user) {
       localStorage.setItem("user", JSON.stringify(user));
 
-      navigate("/profile");
+      navigate(`/profile/${user.userId}`);
 
       setTimeout(() => {
         window.location.reload();
