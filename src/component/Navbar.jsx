@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 export default function Navbar() {
   const [data, setData] = React.useState(
     JSON.parse(localStorage.getItem("user")),
   );
+  const { userId } = useParams();
   const { navigate } = useNavigate();
 
   const handleLogout = () => {
@@ -43,7 +44,7 @@ export default function Navbar() {
             {localStorage.getItem("user") ? (
               <>
                 <Link
-                  to="/profile"
+                  to={`/profile/${data.userId}`}
                   className="px-4 py-2 text-gray-700 hover:text-blue-600 font-medium"
                 >
                   Profile

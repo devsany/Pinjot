@@ -13,6 +13,7 @@ import BlogPage from "./template/BlogPage";
 import ContactPage from "./template/ContactPage";
 import PrivacyPolicyPage from "./template/PrivacyPolicyPage";
 import Features from "./template/Features";
+import Share from "./component/Share";
 
 function App() {
   return (
@@ -55,6 +56,8 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path='/:userId' element={<Share />} />
+          <Route path="*" element={<h1 className="text-center mt-20 text-4xl font-bold">404 - Page Not Found</h1>} />
         </Routes>
       </BrowserRouter>
     </>
