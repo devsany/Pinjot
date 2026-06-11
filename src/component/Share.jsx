@@ -316,27 +316,7 @@ export default function Share() {
 
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
-          <div className="mb-6">
-            <button
-              onClick={() => window.history.back()}
-              className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors group"
-            >
-              <svg
-                className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
-                />
-              </svg>
-              Back
-            </button>
-          </div>
+          
 
           {/* Main Card */}
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-300 hover:shadow-3xl">
