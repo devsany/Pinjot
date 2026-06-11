@@ -1,6 +1,9 @@
+import Navbar from "../component/Navbar";
+
 export default function DocumentationPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+      <Navbar />
       <div className="mx-auto max-w-7xl px-6 py-20">
         {/* Header */}
         <div className="mb-16">
@@ -22,9 +25,7 @@ export default function DocumentationPage() {
         <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
           {/* Sidebar */}
           <aside className="h-fit rounded-2xl border border-slate-800 bg-slate-900 p-6">
-            <h3 className="mb-4 font-semibold text-white">
-              Contents
-            </h3>
+            <h3 className="mb-4 font-semibold text-white">Contents</h3>
 
             <ul className="space-y-3 text-slate-400">
               <li>
@@ -71,9 +72,7 @@ export default function DocumentationPage() {
               id="overview"
               className="rounded-2xl border border-slate-800 bg-slate-900 p-8"
             >
-              <h2 className="mb-4 text-3xl font-bold">
-                Overview
-              </h2>
+              <h2 className="mb-4 text-3xl font-bold">Overview</h2>
 
               <p className="text-slate-400">
                 LinkBio allows you to combine all your important links into one
@@ -86,9 +85,7 @@ export default function DocumentationPage() {
               id="create-profile"
               className="rounded-2xl border border-slate-800 bg-slate-900 p-8"
             >
-              <h2 className="mb-4 text-3xl font-bold">
-                Create Your Profile
-              </h2>
+              <h2 className="mb-4 text-3xl font-bold">Create Your Profile</h2>
 
               <ol className="list-decimal space-y-3 pl-5 text-slate-400">
                 <li>Create an account.</li>
@@ -102,9 +99,7 @@ export default function DocumentationPage() {
               id="add-links"
               className="rounded-2xl border border-slate-800 bg-slate-900 p-8"
             >
-              <h2 className="mb-4 text-3xl font-bold">
-                Add Links
-              </h2>
+              <h2 className="mb-4 text-3xl font-bold">Add Links</h2>
 
               <p className="mb-4 text-slate-400">
                 Add unlimited links to your profile.
@@ -123,9 +118,7 @@ export default function DocumentationPage() {
               id="customize"
               className="rounded-2xl border border-slate-800 bg-slate-900 p-8"
             >
-              <h2 className="mb-4 text-3xl font-bold">
-                Customize Your Page
-              </h2>
+              <h2 className="mb-4 text-3xl font-bold">Customize Your Page</h2>
 
               <ul className="list-disc space-y-2 pl-5 text-slate-400">
                 <li>Change profile picture</li>
@@ -139,9 +132,7 @@ export default function DocumentationPage() {
               id="share"
               className="rounded-2xl border border-slate-800 bg-slate-900 p-8"
             >
-              <h2 className="mb-4 text-3xl font-bold">
-                Share Your Profile
-              </h2>
+              <h2 className="mb-4 text-3xl font-bold">Share Your Profile</h2>
 
               <p className="text-slate-400">
                 Once published, your page gets a unique URL that you can share
@@ -160,9 +151,7 @@ export default function DocumentationPage() {
 
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold">
-                    Is LinkBio free?
-                  </h4>
+                  <h4 className="font-semibold">Is LinkBio free?</h4>
                   <p className="text-slate-400">
                     Yes, basic features are free to use.
                   </p>
@@ -178,9 +167,7 @@ export default function DocumentationPage() {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold">
-                    Is there a limit on links?
-                  </h4>
+                  <h4 className="font-semibold">Is there a limit on links?</h4>
                   <p className="text-slate-400">
                     No, you can add as many links as you need.
                   </p>

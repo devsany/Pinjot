@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { db } from "../firebase/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const LoginPage = () => {
   const [users, setUsers] = useState([]);
@@ -44,6 +45,8 @@ const LoginPage = () => {
   }, []);
 
   return (
+    <>
+        <Navbar />
     <div className="flex min-h-screen items-center justify-center  to-pink-500 px-4">
       <div className="w-full max-w-md rounded-3xl bg-white p-8 shadow-2xl">
         <div className="mb-8 text-center">
@@ -98,6 +101,7 @@ const LoginPage = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

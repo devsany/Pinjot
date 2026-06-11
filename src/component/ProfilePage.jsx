@@ -10,6 +10,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import Navbar from "./Navbar";
 
 export default function ProfilePage() {
   const { userId } = useParams();
@@ -255,6 +256,8 @@ export default function ProfilePage() {
   }
 
   return (
+  <>
+<Navbar />
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 md:p-8">
       {/* Notification Toast */}
       {notification.show && (
@@ -697,5 +700,6 @@ export default function ProfilePage() {
         }
       `}</style>
     </div>
+  </>
   );
 }

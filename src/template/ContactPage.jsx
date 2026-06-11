@@ -4,11 +4,13 @@ import {
   FaMapMarkerAlt,
   FaPaperPlane,
 } from "react-icons/fa";
+import Navbar from "../component/Navbar";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Hero Section */}
+      <Navbar />
       <section className="border-b border-slate-800">
         <div className="mx-auto max-w-6xl px-6 py-24 text-center">
           <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">

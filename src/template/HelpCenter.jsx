@@ -1,4 +1,5 @@
 import { FaSearch, FaQuestionCircle } from "react-icons/fa";
+import Navbar from "../component/Navbar";
 
 export default function HelpCenter() {
   const categories = [
@@ -31,6 +32,7 @@ export default function HelpCenter() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Hero */}
+      <Navbar />
       <section className="border-b border-slate-800">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center">
           <h1 className="text-5xl font-bold">
@@ -38,8 +40,8 @@ export default function HelpCenter() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-slate-400">
-            Find answers, guides, and support resources to help you get the
-            most out of LinkBio.
+            Find answers, guides, and support resources to help you get the most
+            out of LinkBio.
           </p>
 
           <div className="mx-auto mt-10 flex max-w-2xl items-center rounded-2xl border border-slate-800 bg-slate-900 px-5 py-4">
@@ -55,9 +57,7 @@ export default function HelpCenter() {
 
       {/* Categories */}
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-10 text-3xl font-bold">
-          Browse by Category
-        </h2>
+        <h2 className="mb-10 text-3xl font-bold">Browse by Category</h2>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {categories.map((category, index) => (
@@ -67,13 +67,9 @@ export default function HelpCenter() {
             >
               <FaQuestionCircle className="mb-4 text-3xl text-violet-400" />
 
-              <h3 className="text-xl font-semibold">
-                {category.title}
-              </h3>
+              <h3 className="text-xl font-semibold">{category.title}</h3>
 
-              <p className="mt-2 text-slate-400">
-                {category.description}
-              </p>
+              <p className="mt-2 text-slate-400">{category.description}</p>
             </div>
           ))}
         </div>
@@ -82,9 +78,7 @@ export default function HelpCenter() {
       {/* Popular Articles */}
       <section className="border-t border-slate-800">
         <div className="mx-auto max-w-6xl px-6 py-20">
-          <h2 className="mb-10 text-3xl font-bold">
-            Popular Articles
-          </h2>
+          <h2 className="mb-10 text-3xl font-bold">Popular Articles</h2>
 
           <div className="space-y-4">
             {[
@@ -113,9 +107,7 @@ export default function HelpCenter() {
       {/* Contact Support */}
       <section className="border-t border-slate-800">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center">
-          <h2 className="text-4xl font-bold">
-            Still Need Help?
-          </h2>
+          <h2 className="text-4xl font-bold">Still Need Help?</h2>
 
           <p className="mt-4 text-slate-400">
             Can't find what you're looking for? Our support team is here to

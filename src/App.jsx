@@ -2,10 +2,10 @@ import "./App.css";
 import ProfileImageUpload from "./utils/MultipleImageUpload";
 import SignInPage from "./component/SignInPage";
 import Navbar from "./component/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import LoginPage from "./component/LoginPage";
 import ProfilePage from "./component/ProfilePage";
-import ProtectedRoute from "./utils/ProtectedRoute";
+import ProtectedRoute from "./utlis/ProtectedRoute";
 import HeroPage from "./component/HeroPage";
 import DocumentationPage from "./template/DocumentationPage";
 import HelpCenter from "./template/HelpCenter";
@@ -14,12 +14,14 @@ import ContactPage from "./template/ContactPage";
 import PrivacyPolicyPage from "./template/PrivacyPolicyPage";
 import Features from "./template/Features";
 import Share from "./component/Share";
+import Footer from "./component/Footer";
 
 function App() {
+  const { id } = useParams();
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+     
         {/* <ProfileImageUpload /> */}
         {/* <SignInPage /> */}
         {/* Display name: <input type="text" placeholder="Enter your name" />
@@ -31,24 +33,15 @@ function App() {
           {/* DocumentationPage */}
           <Route path="/documentation" element={<DocumentationPage />} />
           {/* HelpCenter */}
-          <Route
-            path="/help-center"
-            element={<HelpCenter />}
-          />
+          <Route path="/help-center" element={<HelpCenter />} />
           {/* BlogPage */}
-          <Route
-            path="/blog"
-            element={<BlogPage />}
-          />
+          <Route path="/blog" element={<BlogPage />} />
           {/* contact page */}
-          <Route 
-          path="/contact"
-          element={<ContactPage />}
-          />  
+          <Route path="/contact" element={<ContactPage />} />
 
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-            <Route path='/features' element={<Features />} />
-            <Route
+          <Route path="/features" element={<Features />} />
+          <Route
             path="/profile/:userId"
             element={
               <ProtectedRoute>
@@ -56,9 +49,17 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path='/:userId' element={<Share />} />
-          <Route path="*" element={<h1 className="text-center mt-20 text-4xl font-bold">404 - Page Not Found</h1>} />
+          <Route path="/:userId" element={<Share />} />
+          <Route
+            path="*"
+            element={
+              <h1 className="text-center mt-20 text-4xl font-bold">
+                404 - Page Not Found
+              </h1>
+            }
+          />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

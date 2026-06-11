@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MultipleImageUpload from "../utils/MultipleImageUpload";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 // ─── Icons (inline SVG, no external dependency) ──────────────────────────────
 
@@ -270,6 +271,8 @@ export default function SignUpForm() {
   return (
     <>
       <style>{CSS}</style>
+              <Navbar />
+      
       <div className="card">
         {/* Header */}
         <div className="header">
