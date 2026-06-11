@@ -17,7 +17,7 @@ import Share from "./component/Share";
 import Footer from "./component/Footer";
 
 function App() {
-  const { id } = useParams();
+  const { userId } = useParams();
   return (
     <>
       <BrowserRouter>
