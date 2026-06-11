@@ -6,14 +6,12 @@ export default function Navbar() {
     JSON.parse(localStorage.getItem("user")),
   );
   const { userId } = useParams();
-  const { navigate } = useNavigate();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
     localStorage.removeItem("user");
     setData(null);
-    setTimeout(() => {
-      window.location.reload();
-    }, 100);
+    navigate("/"); // Smooth navigation without reload
   };
   console.log(JSON.parse(localStorage.getItem("user")));
   return (
