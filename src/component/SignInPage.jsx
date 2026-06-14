@@ -2,6 +2,7 @@ import { useState } from "react";
 import MultipleImageUpload from "../utils/MultipleImageUpload";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import SEO from "../SEO/SEO";
 
 // ─── Icons (inline SVG, no external dependency) ──────────────────────────────
 
@@ -272,7 +273,7 @@ export default function SignUpForm() {
     <>
       <style>{CSS}</style>
               <Navbar />
-      
+      <SEO name="PinJot - Create Your Account. Join PinJot today and create your personalized link in bio page in minutes. Sign up now to showcase all your important links in one beautiful, customizable profile. Get started for free and elevate your online presence with PinJot!" content="Create your account and get started with PinJot today!" />
       <div className="card">
         {/* Header */}
         <div className="header">

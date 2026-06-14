@@ -1,10 +1,12 @@
 import Navbar from "../component/Navbar";
+import SEO from "../SEO/SEO";
 
 export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Header */}
       <Navbar />
+      <SEO name="PinJot - Privacy Policy. Learn how PinJot collects, uses, and protects your personal information. Understand your rights and choices regarding your data while using our link in bio service." content="Learn how PinJot collects, uses, and protects your personal information." />
       <section className="border-b border-slate-800">
         <div className="mx-auto max-w-5xl px-6 py-24 text-center">
           <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">

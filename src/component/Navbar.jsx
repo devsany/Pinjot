@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
+import SEO from "../SEO/SEO";
 
 export default function Navbar() {
   const [data, setData] = React.useState(
@@ -16,6 +17,7 @@ export default function Navbar() {
   console.log(JSON.parse(localStorage.getItem("user")));
   return (
     <nav className="bg-white shadow-2xl">
+      <SEO name="PinJot - Your Ultimate Note Sharing Platform" content="Discover PinJot, the premier note sharing platform designed for seamless collaboration and knowledge sharing. Create, share, and explore notes with ease. Join our vibrant community today!" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

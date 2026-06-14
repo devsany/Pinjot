@@ -17,11 +17,9 @@ import Share from "./component/Share";
 import Footer from "./component/Footer";
 
 function App() {
-  const { userId } = useParams();
   return (
     <>
       <BrowserRouter>
-     
         {/* <ProfileImageUpload /> */}
         {/* <SignInPage /> */}
         {/* Display name: <input type="text" placeholder="Enter your name" />

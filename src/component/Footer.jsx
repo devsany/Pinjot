@@ -1,9 +1,14 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import SEO from "../SEO/SEO";
 
 export default function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950">
+      <SEO
+        name="PinJot - Footer. Connect with us on social media, explore our product and resources, and learn about our legal policies. Stay updated with the latest news and features from PinJot."
+        content="Connect with us on social media, explore our product and resources, and learn about our legal policies."
+      />
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}

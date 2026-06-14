@@ -1,7 +1,10 @@
+import SEO from "../SEO/SEO";
+
 const Main = () => {
   return (
     <section className="relative overflow-hidden bg-white">
       {/* Background Blur */}
+      <SEO name="PinJot - Create Your Link In Bio Page in Minutes. Showcase all your social profiles, projects, and content in one beautiful page. Simple, fast, and fully customizable." content="LinkBio allows you to combine all your important links into one beautiful page. Share your Instagram, YouTube, Portfolio, GitHub, and more with a single URL." />
       <div className="absolute left-0 top-0 h-96 w-96 rounded-full bg-violet-600/30 blur-3xl" />
       <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl" />
 

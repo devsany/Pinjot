@@ -1,4 +1,5 @@
 import Navbar from "../component/Navbar";
+import SEO from "../SEO/SEO";
 
 const blogs = [
   {
@@ -38,6 +39,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Hero */}
       <Navbar />
+      <SEO name="PinJot - Blog. Insights, tips, and resources for creators, freelancers, and businesses. Stay updated with the latest trends, strategies, and best practices to grow your online presence and succeed in the digital world." content="Stay updated with the latest trends, strategies, and best practices for creators, freelancers, and businesses." />
       <section className="border-b border-slate-800">
         <div className="mx-auto max-w-7xl px-6 py-24 text-center">
           <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">

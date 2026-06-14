@@ -3,6 +3,7 @@ import { db } from "../firebase/firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import SEO from "../SEO/SEO";
 
 const LoginPage = () => {
   const [users, setUsers] = useState([]);
@@ -41,6 +42,7 @@ const LoginPage = () => {
   return (
     <>
       <Navbar />
+      <SEO name="PinJot - Log In to Your Account. Access your personalized link in bio page on PinJot by logging in with your credentials. Manage your links, customize your profile, and share your online presence effortlessly. Log in now to continue showcasing all your important links in one beautiful page." content="Log in to your account and manage your PinJot profile today!" />
       <div className="flex min-h-screen items-center justify-center  to-pink-500 px-4">
         <div className="w-full max-w-md rounded-3xl bg-white p-8 shadow-2xl">
           <div className="mb-8 text-center">

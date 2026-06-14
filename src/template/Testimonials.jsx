@@ -1,3 +1,5 @@
+import SEO from "../SEO/SEO";
+
 const testimonials = [
   {
     name: "Rahul Sharma",
@@ -25,6 +27,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="bg-pink-50 py-24">
+      <SEO name="PinJot - Hear from our satisfied users! Discover how PinJot has transformed the online presence of creators, freelancers, and businesses worldwide. Read real testimonials and see why thousands trust us to showcase their links in one beautiful page." content="This platform helped me organize all my social links in one place. The setup took less than 5 minutes!" />
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center">
           <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">

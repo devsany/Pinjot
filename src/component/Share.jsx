@@ -10,6 +10,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import SEO from "../SEO/SEO";
 
 export default function Share() {
   const { userId } = useParams();
@@ -256,7 +257,9 @@ export default function Share() {
 
   return (
     <>
+    <SEO name={`PinJot - Share Your Links. Easily share your important links on your personalized PinJot profile. Connect your social media, portfolio, and more with a single URL. Start sharing today!`} content="Easily share your important links on your personalized PinJot profile." />
       <nav className="bg-white shadow-2xl">
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}

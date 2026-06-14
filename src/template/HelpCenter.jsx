@@ -1,5 +1,6 @@
 import { FaSearch, FaQuestionCircle } from "react-icons/fa";
 import Navbar from "../component/Navbar";
+import SEO from "../SEO/SEO";
 
 export default function HelpCenter() {
   const categories = [
@@ -33,6 +34,7 @@ export default function HelpCenter() {
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Hero */}
       <Navbar />
+      <SEO name="PinJot - Help Center. Find answers, guides, and support resources to help you get the most out of PinJot. Browse by category, read popular articles, or contact our support team for personalized assistance." content="Find answers, guides, and support resources to help you get the most out of PinJot." />
       <section className="border-b border-slate-800">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center">
           <h1 className="text-5xl font-bold">

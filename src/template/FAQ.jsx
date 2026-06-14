@@ -1,4 +1,5 @@
 import { useState } from "react";
+import SEO from "../SEO/SEO";
 
 const faqs = [
   {
@@ -37,6 +38,7 @@ export default function FAQ() {
 
   return (
     <section className="bg-pink-50 py-24">
+      <SEO name="PinJot - Frequently Asked Questions. Get answers to common questions about PinJot, the ultimate link in bio platform. Learn how to create your personalized page, customize it, and share your links with ease. Find out everything you need to know about using PinJot effectively." content="Everything you need to know about our platform." />
       <div className="mx-auto max-w-4xl px-6">
         <div className="text-center">
           

@@ -1,9 +1,11 @@
 import Navbar from "../component/Navbar";
+import SEO from "../SEO/SEO";
 
 export default function DocumentationPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       <Navbar />
+      <SEO name="PinJot - Documentation. Learn how to create your profile, add links, customize your page, and share it with the world. Get step-by-step guides and answers to frequently asked questions about using PinJot effectively." content="Learn how to create your profile, add links, customize your page, and share it with the world." />
       <div className="mx-auto max-w-7xl px-6 py-20">
         {/* Header */}
         <div className="mb-16">

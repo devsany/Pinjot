@@ -7,6 +7,7 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import Navbar from "../component/Navbar";
+import SEO from "../SEO/SEO";
 
 const features = [
   {
@@ -48,6 +49,7 @@ export default function Features() {
   return (
     <>
     <Navbar />
+    <SEO name="PinJot - Features. Discover the powerful features of PinJot, the ultimate link in bio platform. Learn how to create a personalized page, customize it with themes, track analytics, and share your links with ease." content="Discover the powerful features of PinJot, the ultimate link in bio platform." />
       <section className="bg-slate-950 py-24">
         <div className="mx-auto max-w-7xl px-6">
           {/* Heading */}

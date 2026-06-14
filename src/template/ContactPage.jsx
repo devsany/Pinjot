@@ -5,12 +5,14 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import Navbar from "../component/Navbar";
+import SEO from "../SEO/SEO";
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
       {/* Hero Section */}
       <Navbar />
+      <SEO name="PinJot - Contact Us. Have questions, feedback, or need support? Reach out to us and we'll get back to you as soon as possible. Contact PinJot via email, phone, or visit our location in Ranchi, Jharkhand, India. We're here to help you with any inquiries about our link in bio service." content="Have questions, feedback, or need support? Reach out to us and we'll get back to you as soon as possible." />
       <section className="border-b border-slate-800">
         <div className="mx-auto max-w-6xl px-6 py-24 text-center">
           <span className="rounded-full border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">
